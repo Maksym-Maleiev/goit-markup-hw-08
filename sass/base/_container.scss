@@ -1,10 +1,8 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 1px solid tomato; */
 
   @media screen and (min-width: 480px) {
     min-width: 480px;
@@ -18,3 +16,11 @@
     min-width: 1200px;
   }
 }
+
+// .container {
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 1200px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+// }
