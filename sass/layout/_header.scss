@@ -3,17 +3,17 @@
 }
 
 .main-nav {
-  display: flex;
+  // display: flex;
   align-items: center;
 }
 
 .site-nav {
-  display: flex;
+  // display: flex;
   align-items: center;
 }
 
 .site-nav-list {
-  display: flex;
+  // display: flex;
   margin-left: 93px;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .auth-nav-list {
-  display: flex;
+  // display: flex;
   margin-left: auto;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .auth-nav-list__link {
-  display: flex;
+  // display: flex;
   align-items: center;
 
   color: var(--primary-text-color);
@@ -109,3 +109,115 @@
     fill: currentColor;
   }
 }
+
+// .page-header {
+//   border-bottom: 1px solid #ececec;
+// }
+
+// .main-nav {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .site-nav {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .site-nav-list {
+//   display: flex;
+//   margin-left: 93px;
+// }
+
+// .site-nav-list__item {
+//   margin-right: 50px;
+
+//   &:last-child {
+//     margin-right: 0;
+//   }
+// }
+
+// .site-nav-list__link {
+//   display: block;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+
+//   color: var(--title-text-color);
+
+//   @include font(500, 14px, 1.14);
+//   letter-spacing: 0.02em;
+//   text-decoration: none;
+//   transition: color 250ms var(--timing-function);
+
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }
+
+// .site-nav-list__link.current {
+//   color: var(--accent-color);
+
+//   position: relative;
+
+//   &::after {
+//     content: '';
+
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+
+//     display: block;
+//     width: 100%;
+//     height: 4px;
+//     background: #2196f3;
+//     border-radius: 2px;
+//   }
+// }
+
+// .auth-nav-list {
+//   display: flex;
+//   margin-left: auto;
+// }
+
+// .auth-nav-list__item + {
+//   .auth-nav-list__item {
+//     margin-left: 50px;
+//   }
+// }
+
+// .auth-nav-list__link {
+//   display: flex;
+//   align-items: center;
+
+//   color: var(--primary-text-color);
+
+//   @include font(500, 14px, 1.14);
+//   letter-spacing: 0.02em;
+//   text-decoration: none;
+
+//   transition: color 250ms var(--timing-function);
+
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }
+
+// .auth-nav-list__mail {
+//   margin-right: 10px;
+//   fill: currentColor;
+
+//   &:hover {
+//     fill: currentColor;
+//   }
+// }
+
+// .auth-nav-list__tel {
+//   margin-right: 10px;
+//   fill: currentColor;
+
+//   &:hover {
+//     fill: currentColor;
+//   }
+// }

@@ -37,30 +37,41 @@ ul {
 
 @media screen and (min-width: 480px) {
   .container {
-    min-width: 480px;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    min-width: 1200px;
+    width: 1200px;
   }
 }
 
 .section-title {
   color: var(--title-text-color);
   margin-top: 0;
-  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+  }
 }
 
 .socials-list {
@@ -477,17 +488,14 @@ ul {
 }
 
 .main-nav {
-  display: flex;
   align-items: center;
 }
 
 .site-nav {
-  display: flex;
   align-items: center;
 }
 
 .site-nav-list {
-  display: flex;
   margin-left: 93px;
 }
 
@@ -534,7 +542,6 @@ ul {
 }
 
 .auth-nav-list {
-  display: flex;
   margin-left: auto;
 }
 
@@ -543,7 +550,6 @@ ul {
 }
 
 .auth-nav-list__link {
-  display: flex;
   align-items: center;
   color: var(--primary-text-color);
   font-weight: 500;
@@ -607,14 +613,51 @@ ul {
   padding-bottom: 94px;
 }
 
-.feature-list__item {
-  width: 270px;
-  height: 251px;
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-.feature-list__item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .feature-list {
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+}
+
+.feature-list__item {
+  height: 251px;
+}
+
+@media screen and (min-width: 480px) {
+  .feature-list__item {
+    width: 450px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feature-list__item {
+    width: 354px;
+    margin: 15px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature-list__item {
+    width: 270px;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  .feature-list__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .feature-list__subtitle {
@@ -637,12 +680,10 @@ ul {
 
 .feature-list__icons {
   display: flex;
-  width: 270px;
   height: 120px;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  margin-right: 30px;
   background: #f5f4fa;
   border-radius: 4px;
 }
@@ -651,11 +692,29 @@ ul {
   margin-right: 0;
 }
 
+@media screen and (min-width: 480px) {
+  .feature-list__icons {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feature-list__icons {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature-list__icons {
+    width: 270px;
+  }
+}
+
 .section-work {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .section-work {
     display: none;
   }
@@ -741,21 +800,46 @@ ul {
   padding-bottom: 94px;
 }
 
-.clients-list {
-  display: flex;
+@media screen and (min-width: 480px) {
+  .clients-list {
+    margin: -15px;
+  }
 }
 
-.clients-list__item {
-  margin-right: 30px;
+@media screen and (max-width: 1199px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.clients-list__item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .clients-list__item {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list__item {
+    flex-basis: calc((100% - 6 * 30px) / 1);
+  }
 }
 
 .clients-list__link {
   display: flex;
-  width: 170px;
   height: 92px;
   align-items: center;
   justify-content: center;
@@ -767,6 +851,24 @@ ul {
 
 .clients-list__link:hover, .clients-list__link:focus {
   border-color: var(--accent-color);
+}
+
+@media screen and (min-width: 480px) {
+  .clients-list__link {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list__link {
+    width: 170px;
+  }
 }
 
 .clients-list__icon {
