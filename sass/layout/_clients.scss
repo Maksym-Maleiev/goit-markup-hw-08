@@ -20,6 +20,12 @@
 }
 
 .clients-list__item {
+  width: 100%;
+
+  @media screen and (max-width: 479px) {
+    margin-bottom: 30px;
+  }
+
   @media screen and (min-width: 480px) {
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
