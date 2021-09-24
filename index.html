@@ -23,12 +23,15 @@
     <header class="page-header">
         <div class="container main-nav">
             <nav class="site-nav">
-                <a href="/" class="page-header__logo"> <span class="page-header__logo-accent">Web</span>Studio </a>
+                <a href="/" class="page-header__logo">
+                    <span class="page-header__logo-accent">Web</span>Studio
+                </a>
                 <ul class="site-nav-list">
-                    <li class="site-nav-list__item"><a href="./index.html"
-                            class="site-nav-list__link current">Студия</a>
+                    <li class="site-nav-list__item">
+                        <a href="./index.html" class="site-nav-list__link current">Студия</a>
                     </li>
-                    <li class="site-nav-list__item"><a href="./portfolio.html" class="site-nav-list__link">Портфолио</a>
+                    <li class="site-nav-list__item">
+                        <a href="./portfolio.html" class="site-nav-list__link">Портфолио</a>
                     </li>
                     <li class="site-nav-list__item"><a href="" class="site-nav-list__link">Контакты</a></li>
                 </ul>
@@ -143,8 +146,21 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list__item">
-                        <img class="team-list__img" src="./images/product_desiner.jpg" alt="фото участника команды"
-                            width="270" height="260" />
+                        <picture>
+                            <source srcset="./images/product_desiner.jpg 1x, ./images/product_desiner-x2.jpg 2x"
+                                media="(min-width:1200px)" />
+                            <source srcset="
+                    ./images/product_desiner-tab-x1.jpg 1x,
+                    ./images/product_desiner-tab-x2.jpg 2x
+                  " media="(min-width:768px)" />
+                            <source srcset="
+                    ./images/product_desiner-mob-x1.jpg 1x,
+                    ./images/product_desiner-mob-x2.jpg 2x
+                  " media="(min-width:480px)" />
+                            <img class="team-list__img" src="./images/product_desiner.jpg"
+                                alt="фото участника команды" />
+                        </picture>
+
                         <div class="content">
                             <p class="content__title">Игорь Демьяненко</p>
                             <p class="content__subtitle">Product Designer</p>
@@ -181,8 +197,21 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img class="team-list__img" src="./images/frontend_developer.jpg" alt="фото участника команды"
-                            width="270" height="260" />
+                        <picture>
+                            <source srcset="./images/frontend_developer.jpg 1x, ./images/frontend_developer-x2.jpg 2x"
+                                media="(min-width:1200px)" />
+                            <source srcset="
+                    ./images/frontend_developer-tab-x1.jpg 1x,
+                    ./images/frontend_developer-tab-x2.jpg 2x
+                  " media="(min-width:768px)" />
+                            <source srcset="
+                    ./images/frontend_developer-mob-x1.jpg 1x,
+                    ./images/frontend_developer-mob-x2.jpg 2x
+                  " media="(min-width:480px)" />
+                            <img class="team-list__img" src="./images/frontend_developer.jpg"
+                                alt="фото участника команды" />
+                        </picture>
+
                         <div class="content">
                             <p class="content__title">Ольга Репина</p>
                             <p class="content__subtitle">Frontend Developer</p>
@@ -219,8 +248,16 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img class="team-list__img" src="./images/marketing.jpg" alt="фото участника команды"
-                            width="270" height="260" />
+                        <picture>
+                            <source srcset="./images/marketing.jpg 1x, ./images/marketing-x2.jpg 2x"
+                                media="(min-width:1200px)" />
+                            <source srcset="./images/marketing-tab-x1.jpg 1x, ./images/marketing-tab-x2.jpg 2x"
+                                media="(min-width:768px)" />
+                            <source srcset="./images/marketing-mob-x1.jpg 1x, ./images/marketing-mob-x2.jpg 2x"
+                                media="(min-width:480px)" />
+                            <img class="team-list__img" src="./images/marketing.jpg" alt="фото участника команды" />
+                        </picture>
+
                         <div class="content">
                             <p class="content__title">Николай Тарасов</p>
                             <p class="content__subtitle">Marketing</p>
@@ -257,8 +294,21 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img class="team-list__img" src="./images/img_ui_designer.jpg" alt="фото участника команды"
-                            width="270" height="260" />
+                        <picture>
+                            <source srcset="./images/img_ui_designer.jpg 1x, ./images/img_ui_designer-x2.jpg 2x"
+                                media="(min-width:1200px)" />
+                            <source srcset="
+                    ./images/img_ui_designer-tab-x1.jpg 1x,
+                    ./images/img_ui_designer-tab-x2.jpg 2x
+                  " media="(min-width:768px)" />
+                            <source srcset="
+                    ./images/img_ui_designer-mob-x1.jpg 1x,
+                    ./images/img_ui_designer-mob-x2.jpg 2x
+                  " media="(min-width:480px)" />
+                            <img class="team-list__img" src="./images/img_ui_designer.jpg"
+                                alt="фото участника команды" />
+                        </picture>
+
                         <div class="content">
                             <p class="content__title">Михаил Ермаков</p>
                             <p class="content__subtitle">UI Designer</p>
@@ -394,11 +444,11 @@
                     </ul>
                 </div>
                 <form action="#" class="form">
-                    <label class="form-title" for="email">Подпишитесь на рассылку
-                    </label>
+                    <label class="form-title" for="email">Подпишитесь на рассылку </label>
                     <div class="contact">
-                        <input class="contact-input" type="email" name="email" id="email" placeholder="E-mail">
-                        <button class="contact-btn" type="submit">Подписаться
+                        <input class="contact-input" type="email" name="email" id="email" placeholder="E-mail" />
+                        <button class="contact-btn" type="submit">
+                            Подписаться
                             <svg class="contact-icon" width="24" height="24" ;>
                                 <use href="./images/icons.svg#send"></use>
                             </svg>
@@ -420,7 +470,7 @@
                 <div class="modal-form__field">
                     <label class="modal-form__label">Имя</label>
                     <span class="input-wrap">
-                        <input class="input-wrap__input" type="text">
+                        <input class="input-wrap__input" type="text" />
                         <svg class="input-wrap__icon" width="12" height="12">
                             <use href="./images/icons.svg#person"></use>
                         </svg>
@@ -430,7 +480,7 @@
                 <div class="modal-form__field">
                     <label class="modal-form__label">Телефон</label>
                     <span class="input-wrap">
-                        <input class="input-wrap__input" type="tel">
+                        <input class="input-wrap__input" type="tel" />
                         <svg class="input-wrap__icon" width="13" height="13">
                             <use href="./images/icons.svg#phone"></use>
                         </svg>
@@ -440,7 +490,7 @@
                 <div class="modal-form__field">
                     <label class="modal-form__label">Почта</label>
                     <span class="input-wrap">
-                        <input class="input-wrap__input" type="email">
+                        <input class="input-wrap__input" type="email" />
                         <svg class="input-wrap__icon" width="15" height="12">
                             <use href="./images/icons.svg#email"></use>
                         </svg>
@@ -454,15 +504,15 @@
                 </div>
 
                 <div class="modal-form__field checkbox">
-                    <input type="checkbox" id="check" name="policy" class="visually-hidden checkbox">
+                    <input type="checkbox" id="check" name="policy" class="visually-hidden checkbox" />
                     <label for="check" class="checkbox__label">
                         <span class="checkbox__icon">
                             <svg class="" width="11" height="8">
                                 <use href="./images/icons.svg#check"></use>
                             </svg>
                         </span>
-                        Соглашаюсь с рассылкой и принимаю <a class="modal-form__link" href="">Условия
-                            договора</a></label>
+                        Соглашаюсь с рассылкой и принимаю
+                        <a class="modal-form__link" href="">Условия договора</a></label>
                 </div>
 
                 <button class="modal-form__btn" type="submit">Отправить</button>
