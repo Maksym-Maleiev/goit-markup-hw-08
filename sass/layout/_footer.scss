@@ -6,10 +6,29 @@
 }
 
 .footer-box {
-  align-items: baseline;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+.footer-nav {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
 

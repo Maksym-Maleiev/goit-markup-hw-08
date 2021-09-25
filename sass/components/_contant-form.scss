@@ -1,5 +1,11 @@
 .form {
-  margin-left: auto;
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+  // margin-left: auto;
 }
 
 .form-title {
@@ -17,11 +23,15 @@
 }
 
 .contact {
-  display: flex;
+  // display: flex;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .contact-input {
-  margin: 0;
+  margin-bottom: 20px;
   padding: 15px 16px;
   width: 358px;
   height: 50px;
@@ -45,6 +55,10 @@
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
   }
 }
 

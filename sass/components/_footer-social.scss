@@ -1,5 +1,14 @@
 .footer-social {
-  margin-left: 70px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .footer-social__title {
