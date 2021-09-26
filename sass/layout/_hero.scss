@@ -1,51 +1,72 @@
 .hero-section {
-  width: 100%;
-  height: 400px;
+  max-width: 1600px;
+  margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/hero_fon.jpg');
+    url('../images/hero-fon-mob.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: #2f303a;
-  text-align: center;
-
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-    height: 400px;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-fon-mob-2x.jpg');
   }
-
   @media screen and (min-width: 768px) {
-    max-width: 768px;
-    height: 400px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-fon-tab.jpg');
   }
-
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-fon-tab-2x.jpg');
+  }
   @media screen and (min-width: 1200px) {
-    max-width: 1600px;
-    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-fon-desk.jpg');
+  }
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-fon-desk-2x.jpg');
   }
 }
 
 .hero-section__title {
   color: #fff;
-  margin-top: 0;
   margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
-
   @media screen and (min-width: 1200px) {
     font-size: 44px;
-    line-height: 1.4;
+    line-height: 1.36;
+  }
+}
+
+.hero-section__box {
+  margin: 0 auto;
+  max-width: 360px;
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
   }
 }
 

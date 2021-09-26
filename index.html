@@ -20,7 +20,7 @@
 
 <body>
     <!--Шапка страницы-->
-    <header class="page-header">
+    <!-- <header class="page-header">
         <div class="container main-nav">
             <nav class="site-nav">
                 <a href="/" class="page-header__logo">
@@ -55,16 +55,17 @@
                 </li>
             </ul>
         </div>
-    </header>
+    </header> -->
     <!--Уникальный контент страницы-->
     <main>
         <!--Герой-->
         <section class="hero-section">
-            <h1 class="hero-section__title">
-                Эффективные решения<br />
-                для вашего бизнеса
-            </h1>
-            <button type="button" class="hero-section__button" data-modal-open>Заказать услугу</button>
+            <div class="hero-section__box">
+                <h1 class="hero-section__title">
+                    Эффективные решения для вашего бизнеса
+                </h1>
+                <button type="button" class="hero-section__button" data-modal-open>Заказать услугу</button>
+            </div>
         </section>
         <!--Наши преимущества-->
         <section class="section-feature">
@@ -152,15 +153,14 @@
                             <source srcset="
                     ./images/product_desiner-tab-x1.jpg 1x,
                     ./images/product_desiner-tab-x2.jpg 2x
-                  " media="(min-width:768px)" />
+                    " media="(min-width:768px)" />
                             <source srcset="
                     ./images/product_desiner-mob-x1.jpg 1x,
                     ./images/product_desiner-mob-x2.jpg 2x
-                  " media="(min-width:480px)" />
+                    " media="(min-width:480px)" />
                             <img class="team-list__img" src="./images/product_desiner.jpg"
                                 alt="фото участника команды" />
                         </picture>
-
                         <div class="content">
                             <p class="content__title">Игорь Демьяненко</p>
                             <p class="content__subtitle">Product Designer</p>
@@ -203,15 +203,14 @@
                             <source srcset="
                     ./images/frontend_developer-tab-x1.jpg 1x,
                     ./images/frontend_developer-tab-x2.jpg 2x
-                  " media="(min-width:768px)" />
+                    " media="(min-width:768px)" />
                             <source srcset="
                     ./images/frontend_developer-mob-x1.jpg 1x,
                     ./images/frontend_developer-mob-x2.jpg 2x
-                  " media="(min-width:480px)" />
+                    " media="(min-width:480px)" />
                             <img class="team-list__img" src="./images/frontend_developer.jpg"
                                 alt="фото участника команды" />
                         </picture>
-
                         <div class="content">
                             <p class="content__title">Ольга Репина</p>
                             <p class="content__subtitle">Frontend Developer</p>
@@ -257,7 +256,6 @@
                                 media="(min-width:480px)" />
                             <img class="team-list__img" src="./images/marketing.jpg" alt="фото участника команды" />
                         </picture>
-
                         <div class="content">
                             <p class="content__title">Николай Тарасов</p>
                             <p class="content__subtitle">Marketing</p>
@@ -300,15 +298,14 @@
                             <source srcset="
                     ./images/img_ui_designer-tab-x1.jpg 1x,
                     ./images/img_ui_designer-tab-x2.jpg 2x
-                  " media="(min-width:768px)" />
+                    " media="(min-width:768px)" />
                             <source srcset="
                     ./images/img_ui_designer-mob-x1.jpg 1x,
                     ./images/img_ui_designer-mob-x2.jpg 2x
-                  " media="(min-width:480px)" />
+                    " media="(min-width:480px)" />
                             <img class="team-list__img" src="./images/img_ui_designer.jpg"
                                 alt="фото участника команды" />
                         </picture>
-
                         <div class="content">
                             <p class="content__title">Михаил Ермаков</p>
                             <p class="content__subtitle">UI Designer</p>
@@ -348,7 +345,7 @@
             </div>
         </section>
         <!-- Постоянные клиенты -->
-        <section class="section-clients">
+        <!-- <section class="section-clients">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="clients-list">
@@ -396,10 +393,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
     <!--Подвал-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer-box">
                 <div class="footer-nav">
@@ -518,7 +515,7 @@
                 <button class="modal-form__btn" type="submit">Отправить</button>
             </form>
         </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
 </body>
 
