@@ -20,7 +20,7 @@
 
 <body>
     <!--Шапка страницы-->
-    <!-- <header class="page-header">
+    <header class="page-header">
         <div class="container main-nav">
             <nav class="site-nav">
                 <a href="/" class="page-header__logo">
@@ -54,8 +54,55 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="menu-open">
+                <svg class="menu-open__icon" width="24" height="16">
+                    <use href="./images/icons.svg#menu-open"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+        <div class="mob-menu">
+            <div class="container">
+                <button type="button" class="menu-close">
+                    <svg class="menu-close__icon" width="24" height="16">
+                        <use href="./images/icons.svg#menu-close"></use>
+                    </svg>
+                </button>
+                <ul class="mob-menu-list">
+                    <li class="mob-menu-item">
+                        <a href="" class="mob-menu-link">Студия</a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a href="" class="mob-menu-link">Портфолио</a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a href="" class="mob-menu-link">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mob-contacts-list">
+                    <li class="mob-contacts-item">
+                        <a href="" class="mob-contacts-link mob-contacts-tel-link">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mob-contacts-item">
+                        <a href="" class="mob-contacts-link">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mob-social-list">
+                    <li class="mob-social-item">
+                        <a href="" class="mob-social-link">Instagram</a>
+                    </li>
+                    <li class="mob-social-item">
+                        <a href="" class="mob-social-link">Twitter</a>
+                    </li>
+                    <li class="mob-social-item">
+                        <a href="" class="mob-social-link">Facebook</a>
+                    </li>
+                    <li class="mob-social-item">
+                        <a href="" class="mob-social-link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <!--Уникальный контент страницы-->
     <main>
         <!--Герой-->
@@ -345,7 +392,7 @@
             </div>
         </section>
         <!-- Постоянные клиенты -->
-        <!-- <section class="section-clients">
+        <section class="section-clients">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="clients-list">
@@ -393,7 +440,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
     <!--Подвал-->
     <!-- <footer class="footer">
@@ -454,7 +501,7 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal-window">
             <button class="modal-btn" type="button" data-modal-close>
@@ -515,7 +562,7 @@
                 <button class="modal-form__btn" type="submit">Отправить</button>
             </form>
         </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
 </body>
 

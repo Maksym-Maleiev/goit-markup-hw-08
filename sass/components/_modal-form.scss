@@ -100,14 +100,19 @@
 
 .checkbox__label {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 
   font-family: 'Roboto';
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__icon {
@@ -133,12 +138,16 @@
   margin-left: 4px;
 
   font-family: 'Roboto';
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
 
   color: var(--accent-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form__btn {
