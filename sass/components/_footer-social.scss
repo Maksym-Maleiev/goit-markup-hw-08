@@ -1,10 +1,6 @@
 .footer-social {
   margin-bottom: 60px;
-
-  @media screen and (min-width: 480px) {
-    text-align: center;
-  }
-
+  text-align: center;
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
     margin-bottom: 0;
@@ -24,6 +20,8 @@
 
 .social-list {
   display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .social-list__link {

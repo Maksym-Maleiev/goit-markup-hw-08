@@ -60,7 +60,7 @@
                 </svg>
             </button>
         </div>
-        <div class="mob-menu">
+        <div class="mob-menu is-hidden">
             <div class="container">
                 <button type="button" class="menu-close">
                     <svg class="menu-close__icon" width="24" height="16">
@@ -78,28 +78,30 @@
                         <a href="" class="mob-menu-link">Контакты</a>
                     </li>
                 </ul>
-                <ul class="mob-contacts-list">
-                    <li class="mob-contacts-item">
-                        <a href="" class="mob-contacts-link mob-contacts-tel-link">+38 096 111 11 11</a>
-                    </li>
-                    <li class="mob-contacts-item">
-                        <a href="" class="mob-contacts-link">info@devstudio.com</a>
-                    </li>
-                </ul>
-                <ul class="mob-social-list">
-                    <li class="mob-social-item">
-                        <a href="" class="mob-social-link">Instagram</a>
-                    </li>
-                    <li class="mob-social-item">
-                        <a href="" class="mob-social-link">Twitter</a>
-                    </li>
-                    <li class="mob-social-item">
-                        <a href="" class="mob-social-link">Facebook</a>
-                    </li>
-                    <li class="mob-social-item">
-                        <a href="" class="mob-social-link">LinkedIn</a>
-                    </li>
-                </ul>
+                <div class="mob-menu-bottom">
+                    <ul class="mob-contacts-list">
+                        <li class="mob-contacts-item">
+                            <a href="" class="mob-contacts-link mob-contacts-tel-link">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mob-contacts-item">
+                            <a href="" class="mob-contacts-link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mob-social-list">
+                        <li class="mob-social-item">
+                            <a href="" class="mob-social-link">Instagram</a>
+                        </li>
+                        <li class="mob-social-item">
+                            <a href="" class="mob-social-link">Twitter</a>
+                        </li>
+                        <li class="mob-social-item">
+                            <a href="" class="mob-social-link">Facebook</a>
+                        </li>
+                        <li class="mob-social-item">
+                            <a href="" class="mob-social-link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -443,7 +445,7 @@
         </section>
     </main>
     <!--Подвал-->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-box">
                 <div class="footer-nav">
@@ -487,7 +489,19 @@
                         </li>
                     </ul>
                 </div>
-                <form action="#" class="form">
+                <div class="contact-form">
+                    <h3 class="form-title">Подпишитесь на рассылку </h3>
+                    <form action="#" class="form">
+                        <input class="contact-input" type="email" name="email" id="email" placeholder="E-mail" />
+                    </form>
+                    <button class="contact-btn" type="submit">
+                        Подписаться
+                        <svg class="contact-icon" width="24" height="24" ;>
+                            <use href="./images/icons.svg#send"></use>
+                        </svg>
+                    </button>
+                </div>
+                <!-- <form action="#" class="form">
                     <label class="form-title" for="email">Подпишитесь на рассылку </label>
                     <div class="contact">
                         <input class="contact-input" type="email" name="email" id="email" placeholder="E-mail" />
@@ -498,10 +512,10 @@
                             </svg>
                         </button>
                     </div>
-                </form>
+                </form> -->
             </div>
         </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal-window">
             <button class="modal-btn" type="button" data-modal-close>
@@ -564,6 +578,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

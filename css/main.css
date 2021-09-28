@@ -403,12 +403,7 @@ ul {
 
 .footer-social {
   margin-bottom: 60px;
-}
-
-@media screen and (min-width: 480px) {
-  .footer-social {
-    text-align: center;
-  }
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -430,6 +425,8 @@ ul {
 
 .social-list {
   display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .social-list__link {
@@ -449,6 +446,31 @@ ul {
   background-color: var(--accent-color);
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .contact-form {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form {
+    width: 358px;
+  }
+}
+
+.form {
+  display: block;
+  margin-bottom: 20px;
+}
+
 @media screen and (min-width: 1200px) {
   .form {
     margin-left: auto;
@@ -456,7 +478,7 @@ ul {
 }
 
 .form-title {
-  display: flex;
+  margin-top: 0;
   margin-bottom: 20px;
   font-family: 'Roboto';
   font-weight: 700;
@@ -467,16 +489,9 @@ ul {
   color: #ffffff;
 }
 
-@media screen and (min-width: 1200px) {
-  .contact {
-    display: flex;
-  }
-}
-
 .contact-input {
-  margin-bottom: 20px;
   padding: 15px 16px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -500,16 +515,16 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .contact-input {
-    margin: 0;
+    width: 358px;
   }
 }
 
 .contact-btn {
   display: flex;
-  min-width: 200px;
+  width: 200px;
   height: 50px;
   padding: 10px 28px;
-  margin-left: 12px;
+  margin: 0 auto;
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
@@ -528,6 +543,12 @@ ul {
 
 .contact-btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-btn {
+    margin-left: 12px;
+  }
 }
 
 .contact-icon {
@@ -551,6 +572,13 @@ ul {
 
 .site-nav-list {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav-list {
+    display: flex;
+    margin-left: 93px;
+  }
 }
 
 .site-nav-list__item {
@@ -599,8 +627,30 @@ ul {
   display: none;
 }
 
-.auth-nav-list__item + .auth-nav-list__item {
-  margin-left: 50px;
+@media screen and (min-width: 768px) {
+  .auth-nav-list {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav-list {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .auth-nav-list__item + .auth-nav-list__item {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav-list__item + .auth-nav-list__item {
+    margin-top: 0;
+    margin-left: 50px;
+  }
 }
 
 .auth-nav-list__link {
@@ -608,8 +658,8 @@ ul {
   align-items: center;
   color: var(--primary-text-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: color 250ms var(--timing-function);
@@ -617,6 +667,14 @@ ul {
 
 .auth-nav-list__link:hover, .auth-nav-list__link:focus {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav-list__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .auth-nav-list__mail {
@@ -659,9 +717,16 @@ ul {
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
+
 .menu-close {
   position: absolute;
   right: 15px;
+  top: -37px;
 }
 
 .menu-close__icon {
@@ -685,6 +750,16 @@ ul {
 
 .mob-menu .container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
 }
 
 .mob-menu-item:not(:last-child) {
@@ -743,6 +818,12 @@ ul {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #2196f3;
+}
+
+.mob-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .hero-section {
@@ -1119,7 +1200,15 @@ ul {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-box {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 @media screen and (min-width: 1200px) {
