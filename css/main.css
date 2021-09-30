@@ -752,6 +752,7 @@ ul {
   height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
+  z-index: 100;
 }
 
 .mob-menu .container {
@@ -1092,6 +1093,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .team-list__item {
     flex-basis: calc(100% / 4 - 30px);
+    margin-bottom: 0;
   }
   .team-list__item:first-child {
     margin-left: 0;
@@ -1124,8 +1126,15 @@ ul {
 
 .section-clients {
   background-color: #fff;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients-list {
@@ -1278,8 +1287,15 @@ ul {
 }
 
 .section-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio-button {
@@ -1306,7 +1322,7 @@ ul {
 .portfolio-button-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   align-items: center;
 }
 
@@ -1317,9 +1333,25 @@ ul {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio-button-list {
+    margin-bottom: 50px;
+  }
+}
+
 .portfolio-button-item {
   margin-right: 8px;
   margin-bottom: 15px;
+}
+
+.portfolio-button-item:nth-child(n + 4) {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-button-item {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio-button-item:last-child {

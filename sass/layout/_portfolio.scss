@@ -1,6 +1,10 @@
 .section-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio-button {
@@ -32,19 +36,27 @@
 .portfolio-button-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   align-items: center;
 
   @media screen and (min-width: 768px) {
     flex-wrap: nowrap;
     justify-content: center;
   }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-button-item {
   margin-right: 8px;
   margin-bottom: 15px;
-
+  &:nth-child(n + 4) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
   &:last-child {
     margin-right: 0;
   }
