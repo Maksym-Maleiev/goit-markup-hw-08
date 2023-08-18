@@ -1,6 +1,7 @@
 # WebStudio
 
 - Create a repository `web-studio`.
+- Clone the created repository and copy the files of the previous work into it.
 - Design a responsive version of all pages and elements of the
   [**homework**](<https://www.figma.com/file/0uRxYENU9pFeOsq0U0u4IJ/Web-Studio-(Version-2.1)-(Copy)?node-id=1%3A3329&mode=dev>)
   layout.
