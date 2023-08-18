@@ -1,0 +1,101 @@
+.subscr {
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+  }
+}
+
+.subscr__title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: getColor('white-color');
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.subscr__field {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include centeredFlex();
+  }
+}
+
+.subscr__input {
+  width: 100%;
+  padding: 16px;
+
+  color: getColor('white-color');
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  @media screen and (min-width: $tablet) {
+    min-width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 358px;
+  }
+
+  &:focus {
+    border-color: transparent;
+    outline: 1px solid getColor('white-color');
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscr__button {
+  @include centeredFlex(inline-flex);
+
+  width: 200px;
+  $padding: 10px;
+  padding-top: $padding;
+  padding-bottom: $padding;
+
+  background-color: getColor('accent-color');
+  color: getColor('white-color');
+
+  line-height: 1.86;
+  letter-spacing: 0.06em;
+
+  transition: box-shadow $transition-duration $timing-function;
+
+  overflow: hidden;
+
+  @extend %button;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
+  }
+}
+
+.subscr__icon {
+  margin-left: 10px;
+  fill: currentColor;
+
+  transition: transform $transition-duration $timing-function;
+
+  .subscr__button:hover > &,
+  .subscr__button:focus > & {
+    transform: translate(40px, -40px);
+  }
+}
