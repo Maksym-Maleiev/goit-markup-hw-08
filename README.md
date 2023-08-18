@@ -1,7 +1,5 @@
 # WebStudio
 
-## General information
-
 > This is the first individual project of the `full-stack` course from
 > [`GoIT`](https://goit.global/ua/) company, layout section `(html/css)`.
 
