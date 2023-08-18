@@ -1,0 +1,68 @@
+.modal {
+  background-color: getColor('white-color');
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transition: transform $transition-duration $timing-function,
+    opacity $transition-duration $timing-function;
+
+  @media screen and (min-width: $mobile) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    width: 100%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 528px;
+  }
+}
+
+.close-button {
+  @include centeredFlex($type: inline-flex);
+
+  padding: 6px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: getColor('black-color');
+  background: getColor('white-color');
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: border-color $transition-duration $timing-function;
+
+  @extend %button;
+
+  &:hover,
+  &:focus {
+    border-color: getColor('accent-color');
+  }
+
+  @media screen and (max-width: 479px) {
+    margin-left: calc(100% - 38px);
+    margin-right: 8px;
+    margin-top: 8px;
+  }
+
+  @media screen and (min-width: $mobile) {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+}
+
+.close-button__icon {
+  fill: currentColor;
+  transition: fill $transition-duration $timing-function;
+
+  .close-button:hover &,
+  .close-button:focus & {
+    fill: getColor('accent-color');
+  }
+}
