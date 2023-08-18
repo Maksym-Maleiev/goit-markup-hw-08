@@ -1,0 +1,72 @@
+.clients-list {
+  @extend %list;
+
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
+.clients-list__item {
+  @media screen and (max-width: 479px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: $mobile) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: 1199px) {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc(100% / 6);
+
+    &:not(:last-child) {
+      margin-right: $card-set-gap;
+    }
+  }
+}
+
+.clients-list__link {
+  @include centeredFlex();
+
+  height: 92px;
+  border-radius: 4px;
+  color: getColor('fill-color');
+  border: 1px solid getColor('fill-color');
+
+  transition: border-color $transition-duration $timing-function;
+
+  @extend %link;
+
+  &:hover,
+  &:focus {
+    border-color: getColor('accent-color');
+  }
+}
+
+.clients-list__icon {
+  fill: currentColor;
+
+  transition: fill $transition-duration $timing-function;
+
+  .clients-list__link:hover &,
+  .clients-list__link:focus & {
+    fill: getColor('accent-color');
+  }
+}
