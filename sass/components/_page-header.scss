@@ -1,0 +1,16 @@
+.page-header {
+  position: relative;
+}
+
+.page-header::after {
+  content: '';
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #ececec;
+}
+
+.inner-container {
+  display: flex;
+  align-items: center;
+}
