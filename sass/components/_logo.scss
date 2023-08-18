@@ -1,0 +1,18 @@
+.logo {
+  color: getColor('secondary-color');
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  @extend %link;
+
+  &--white {
+    color: getColor('white-color');
+  }
+}
+
+.logo__accent {
+  color: getColor('accent-color');
+}
