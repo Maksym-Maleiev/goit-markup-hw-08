@@ -1,0 +1,22 @@
+%list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%link {
+  text-decoration: none;
+}
+
+%button {
+  padding: 6px 22px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
