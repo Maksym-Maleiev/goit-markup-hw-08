@@ -1,4 +1,4 @@
-# WebStudio
+# Homework
 
 - Create a repository `goit-markup-hw-08`.
 - Clone the created repository and copy the files of the previous work into it.
