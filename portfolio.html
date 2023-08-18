@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <div class="inner-container">
+        <!-- SITE-NAV -->
+        <nav class="site-nav">
+          <a href="#" class="logo"><span class="logo__accent">Web</span>Studio</a>
+
+          <ul class="site-nav-list">
+            <li class="site-nav-list__item">
+              <a href="./index.html" class="site-nav-list__link">Studio</a>
+            </li>
+            <li class="site-nav-list__item">
+              <a href="./portfolio.html" class="site-nav-list__link site-nav-list__link--current">Portfolio</a>
+            </li>
+            <li class="site-nav-list__item">
+              <a href="#contacts" class="site-nav-list__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- MENU-TOGGLE -->
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./images/sprite.svg#burger"></use>
+          </svg>
+        </button>
+        <!-- ---------- -->
+
+        <ul class="auth-nav-list">
+          <li class="auth-nav-list__item">
+            <a href="mailto:info@devstudio.com" class="auth-nav-list__link">
+              <svg class="auth-nav-list__icon" width="16px" height="12">
+                <use href="./images/sprite.svg#mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="auth-nav-list__item">
+            <a href="tel:+380961111111" class="auth-nav-list__link">
+              <svg class="auth-nav-list__icon" width="10px" height="16">
+                <use href="./images/sprite.svg#tel"></use>
+              </svg>
+              +38(096) 111-11-11</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title visually-hidden">Portfolio</h1>
+
+        <ul class="filter-list">
+          <li class="filter-list__item">
+            <button class="filter-list__button">All</button>
+          </li>
+          <li class="filter-list__item">
+            <button class="filter-list__button">Websites</button>
+          </li>
+          <li class="filter-list__item">
+            <button class="filter-list__button">Applications</button>
+          </li>
+          <li class="filter-list__item">
+            <button class="filter-list__button">Design</button>
+          </li>
+          <li class="filter-list__item">
+            <button class="filter-list__button">Marketing</button>
+          </li>
+        </ul>
+
+        <!-- CARD-SET -->
+
+        <ul class="card-set">
+          <li class="card-set__item">
+            <a href="" class="card">
+              <div class="card__thumb">
+                <picture>
+                  <source srcset="./images/card_1-450.webp 1x, ./images/card_1-450@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp" />
+
+                  <source srcset="./images/card_1-354.webp 1x, ./images/card_1-354@2x.webp 2x"
+                    media="(max-width: 1199px)" type="image/webp" />
+
+                  <source srcset="./images/card_1-370.webp 1x, ./images/card_1-370@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+
+                  <source srcset="./images/card_1-450.jpg 1x, ./images/card_1-450@2x.jpg 2x" media="(max-width: 767px)"
+                    type="image/jpg" />
+
+                  <source srcset="./images/card_1-354.jpg 1x, ./images/card_1-354@2x.jpg 2x" media="(max-width: 1199px)"
+                    type="image/jpg" />
+
+                  <source srcset="./images/card_1-370.jpg 1x, ./images/card_1-370@2x.jpg 2x" media="(min-width: 1200px)"
+                    type="image/jpg" />
+
+                  <img src="./images/card_1-450.jpg" alt="Technocrack" />
+                </picture>
+
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Technocracker is a modern platform for the spread of coronavirus. Companies
+                    use this platform for digital espionage and attacks on competitors' secure
+                    servers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card__content">
+                <h2 class="card__subtitle">Technocrack</h2>
+                <p class="card__text">Websites</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="card-set__item">
+            <a href="" class="card">
+              <div class="card__thumb">
+                <picture>
+                  <source srcset="./images/card_2-450.webp 1x, ./images/card_2-450@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp" />
+
+                  <source srcset="./images/card_2-354.webp 1x, ./images/card_2-354@2x.webp 2x"
+                    media="(max-width: 1199px)" type="image/webp" />
+
+                  <source srcset="./images/card_2-370.webp 1x, ./images/card_2-370@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+
+                  <source srcset="./images/card_2-450.jpg 1x, ./images/card_2-450@2x.jpg 2x" media="(max-width: 767px)"
+                    type="image/jpg" />
+
+                  <source srcset="./images/card_2-354.jpg 1x, ./images/card_2-354@2x.jpg 2x" media="(max-width: 1199px)"
+                    type="image/jpg" />
+
+                  <source srcset="./images/card_2-370.jpg 1x, ./images/card_2-370@2x.jpg 2x" media="(min-width: 1200px)"
+                    type="image/jpg" />
+
+                  <img src="./images/card_2-450.jpg" alt="New Orleans vs Golden Star poster" />
+                </picture>
+
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Technocracker is a modern platform for the spread of coronavirus. Companies
+                    use this platform for digital espionage and attacks on competitors' secure
+                    servers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card__content">
+                <h2 class="card__subtitle">New Orleans vs Golden Star poster</h2>
+                <p class="card__text">Design</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="card-set__item">
+            <a href="" class="card">
+              <div class="card__thumb">
+                <picture>
+                  <source srcset="./images/card_3-450.webp 1x, ./images/card_3-450@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp" />
+
+                  <source srcset="./images/card_3-354.webp 1x, ./images/card_3-354@2x.webp 2x"
+                    media="(max-width: 1199px)" type="image/webp" />
+
+                  <source srcset="./images/card_3-370.webp 1x, ./images/card_3-370@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+
+                  <source srcset="./images/card_3-450.jpg 1x, ./images/card_3-450@2x.jpg 2x" media="(max-width: 767px)"
+                    type="image/jpg" />
+
+                  <source srcset="./images/card_3-354.jpg 1x, ./images/card_3-354@2x.jpg 2x" media="(max-width: 1199px)"
+                    type="image/jpg" />
+
+                  <source srcset="./images/card_3-370.jpg 1x, ./images/card_3-370@2x.jpg 2x" media="(min-width: 1200px)"
+                    type="image/jpg" />
+
+                  <img src="./images/card_3-450.jpg" alt="Seafood restaurant" />
+                </picture>
+
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Technocracker is a modern platform for the spread of coronavirus. Companies
+                    use this platform for digital espionage and attacks on competitors' secure
+                    servers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card__content">
+                <h2 class="card__subtitle">Seafood restaurant</h2>
+                <p class="card__text">Applications</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="card-set__item">
+            <a href="" class="card">
+              <div class="card__thumb">
+                <picture>
+                  <source srcset="./images/card_4-450.webp 1x, ./images/card_4-450@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp" />
+
+                  <source srcset="./images/card_4-354.webp 1x, ./images/card_4-354@2x.webp 2x"
+                    media="(max-width: 1199px)" type="image/webp" />
+
+                  <source srcset="./images/card_4-370.webp 1x, ./images/card_4-370@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+
+                  <source srcset="./images/card_4-450.jpg 1x, ./images/card_4-450@2x.jpg 2x" media="(max-width: 767px)"
+                    type="image/jpg" />
+
+                  <source srcset="./images/card_4-354.jpg 1x, ./images/card_4-354@2x.jpg 2x" media="(max-width: 1199px)"
+                    type="image/jpg" />
+
+                  <source srcset="./images/card_4-370.jpg 1x, ./images/card_4-370@2x.jpg 2x" media="(min-width: 1200px)"
+                    type="image/jpg" />
+
+                  <img src="./images/card_4-450.jpg" alt="Project Prime" />
+                </picture>
+
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Technocracker is a modern platform for the spread of coronavirus. Companies
+                    use this platform for digital espionage and attacks on competitors' secure
+                    servers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card__content">
+                <h2 class="card__subtitle">Project Prime</h2>
+                <p class="card__text">Marketin</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="card-set__item">
+            <a href="" class="card">
+              <div class="card__thumb">
+                <picture>
+                  <source srcset="./images/card_5-450.webp 1x, ./images/card_5-450@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp" />
+
+                  <source srcset="./images/card_5-354.webp 1x, ./images/card_5-354@2x.webp 2x"
+                    media="(max-width: 1199px)" type="image/webp" />
+
+                  <source srcset="./images/card_5-370.webp 1x, ./images/card_5-370@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+
+                  <source srcset="./images/card_5-450.jpg 1x, ./images/card_5-450@2x.jpg 2x" media="(max-width: 767px)"
+                    type="image/jpg" />
+
+                  <source srcset="./images/card_5-354.jpg 1x, ./images/card_5-354@2x.jpg 2x" media="(max-width: 1199px)"
+                    type="image/jpg" />
+
+                  <source srcset="./images/card_5-370.jpg 1x, ./images/card_5-370@2x.jpg 2x" media="(min-width: 1200px)"
+                    type="image/jpg" />
+
+                  <img src="./images/card_5-450.jpg" alt="Project Boxes" />
+                </picture>
+
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Technocracker is a modern platform for the spread of coronavirus. Companies
+                    use this platform for digital espionage and attacks on competitors' secure
+                    servers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card__content">
+                <h2 class="card__subtitle">Project Boxes</h2>
+                <p class="card__text">Applications</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="card-set__item">
+            <a href="" class="card">
+              <div class="card__thumb">
+                <picture>
+                  <source srcset="./images/card_6-450.webp 1x, ./images/card_6-450@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp" />
+
+                  <source srcset="./images/card_6-354.webp 1x, ./images/card_6-354@2x.webp 2x"
+                    media="(max-width: 1199px)" type="image/webp" />
+
+                  <source srcset="./images/card_6-370.webp 1x, ./images/card_6-370@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+
+                  <source srcset="./images/card_6-450.jpg 1x, ./images/card_6-450@2x.jpg 2x" media="(max-width: 767px)"
+                    type="image/jpg" />
+
+                  <source srcset="./images/card_6-354.jpg 1x, ./images/card_6-354@2x.jpg 2x" media="(max-width: 1199px)"
+                    type="image/jpg" />
+
+                  <source srcset="./images/card_6-370.jpg 1x, ./images/card_6-370@2x.jpg 2x" media="(min-width: 1200px)"
+                    type="image/jpg" />
+
+                  <img src="./images/card_1-450.jpg" alt="Inspiration has no Borders" />
+                </picture>
+
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Technocracker is a modern platform for the spread of coronavirus. Companies
+                    use this platform for digital espionage and attacks on competitors' secure
+                    servers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card__content">
+                <h2 class="card__subtitle">Inspiration has no Borders</h2>
+                <p class="card__text">Websites</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="card-set__item">
+            <a href="" class="card">
+              <div class="card__thumb">
+                <picture>
+                  <source srcset="./images/card_7-450.webp 1x, ./images/card_7-450@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp" />
+
+                  <source srcset="./images/card_7-354.webp 1x, ./images/card_7-354@2x.webp 2x"
+                    media="(max-width: 1199px)" type="image/webp" />
+
+                  <source srcset="./images/card_7-370.webp 1x, ./images/card_7-370@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+
+                  <source srcset="./images/card_7-450.jpg 1x, ./images/card_7-450@2x.jpg 2x" media="(max-width: 767px)"
+                    type="image/jpg" />
+
+                  <source srcset="./images/card_7-354.jpg 1x, ./images/card_7-354@2x.jpg 2x" media="(max-width: 1199px)"
+                    type="image/jpg" />
+
+                  <source srcset="./images/card_7-370.jpg 1x, ./images/card_7-370@2x.jpg 2x" media="(min-width: 1200px)"
+                    type="image/jpg" />
+
+                  <img src="./images/card_7-450.jpg" alt="Edition Limited Edition" />
+                </picture>
+
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Technocracker is a modern platform for the spread of coronavirus. Companies
+                    use this platform for digital espionage and attacks on competitors' secure
+                    servers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card__content">
+                <h2 class="card__subtitle">Edition Limited Edition</h2>
+                <p class="card__text">Design</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="card-set__item">
+            <a href="" class="card">
+              <div class="card__thumb">
+                <picture>
+                  <source srcset="./images/card_8-450.webp 1x, ./images/card_8-450@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp" />
+
+                  <source srcset="./images/card_8-354.webp 1x, ./images/card_8-354@2x.webp 2x"
+                    media="(max-width: 1199px)" type="image/webp" />
+
+                  <source srcset="./images/card_8-370.webp 1x, ./images/card_8-370@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+
+                  <source srcset="./images/card_8-450.jpg 1x, ./images/card_8-450@2x.jpg 2x" media="(max-width: 767px)"
+                    type="image/jpg" />
+
+                  <source srcset="./images/card_8-354.jpg 1x, ./images/card_8-354@2x.jpg 2x" media="(max-width: 1199px)"
+                    type="image/jpg" />
+
+                  <source srcset="./images/card_8-370.jpg 1x, ./images/card_8-370@2x.jpg 2x" media="(min-width: 1200px)"
+                    type="image/jpg" />
+
+                  <img src="./images/card_1-450.jpg" alt="Project LAB" />
+                </picture>
+
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Technocracker is a modern platform for the spread of coronavirus. Companies
+                    use this platform for digital espionage and attacks on competitors' secure
+                    servers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card__content">
+                <h2 class="card__subtitle">Project LAB</h2>
+                <p class="card__text">Marketin</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="card-set__item">
+            <a href="" class="card">
+              <div class="card__thumb">
+                <picture>
+                  <source srcset="./images/card_9-450.webp 1x, ./images/card_9-450@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp" />
+
+                  <source srcset="./images/card_9-354.webp 1x, ./images/card_9-354@2x.webp 2x"
+                    media="(max-width: 1199px)" type="image/webp" />
+
+                  <source srcset="./images/card_9-370.webp 1x, ./images/card_9-370@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+
+                  <source srcset="./images/card_9-450.jpg 1x, ./images/card_9-450@2x.jpg 2x" media="(max-width: 767px)"
+                    type="image/jpg" />
+
+                  <source srcset="./images/card_9-354.jpg 1x, ./images/card_9-354@2x.jpg 2x" media="(max-width: 1199px)"
+                    type="image/jpg" />
+
+                  <source srcset="./images/card_9-370.jpg 1x, ./images/card_9-370@2x.jpg 2x" media="(min-width: 1200px)"
+                    type="image/jpg" />
+
+                  <img src="./images/card_9-450.jpg" alt="Growing Business" />
+                </picture>
+
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Technocracker is a modern platform for the spread of coronavirus. Companies
+                    use this platform for digital espionage and attacks on competitors' secure
+                    servers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card__content">
+                <h2 class="card__subtitle">Growing Business</h2>
+                <p class="card__text">Applications</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- PAGE FOOTER -->
+  <footer id="contacts" id="mobile-contacts" class="page-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="wrapper">
+          <div class="footer-nav">
+            <a href="./index.html" class="logo logo--white"><span class="logo__accent">Web</span>Studio</a>
+
+            <address class="address">
+              <p class="address__text">Kyiv, 26 Lesya Ukrainka Ave</p>
+              <a href="mailto:info@example.com" class="address__link link">info@example.com</a><br />
+              <a href="tel:+380991111111" class="address__link link">+38(099) 111-11-11</a>
+            </address>
+          </div>
+
+          <div class="join">
+            <b class="join__title">Join</b>
+
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a aria-label="Instagram" href="/" class="social-list__link social-list__link--dark-theme">
+                  <svg class="social-list__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-list__item">
+                <a aria-label="Twitter" href="/" class="social-list__link social-list__link--dark-theme">
+                  <svg class="social-list__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-list__item">
+                <a aria-label="Facebook" href="/" class="social-list__link social-list__link--dark-theme">
+                  <svg class="social-list__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-list__item">
+                <a aria-label="LinkedIn" href="/" class="social-list__link social-list__link--dark-theme">
+                  <svg class="social-list__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="subscr">
+          <b class="subscr__title">Subscribe to newsletter</b>
+
+          <div class="subscr__field">
+            <input type="email" class="subscr__input" placeholder="E-mail" />
+            <button class="button subscr__button" type="submit">
+              Subscribe
+              <svg class="subscr__icon" width="24" height="24">
+                <use href="./images/sprite.svg#send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE-MENU -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg width="40" height="40">
+        <use href="./images/sprite.svg#cross"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu">
+      <li class="mobile-menu__item">
+        <a href="./index.html" class="mobile-menu__link">Studio</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="./portfolio.html" class="mobile-menu__link">Portfolio</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#mobile-contacts" class="mobile-menu__link">Contacts</a>
+      </li>
+    </ul>
+
+    <div class="mobile-wrapper">
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a href="tel:+380961111111" class="mobile-contacts__link">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts__item">
+          <a href="mailto:info@devstudio.com" class="mobile-contacts__link">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-social">
+        <li class="mobile-social__item"><a href="" class="mobile-social__link">Instagram</a></li>
+        <li class="mobile-social__item"><a href="" class="mobile-social__link">Twitter</a></li>
+        <li class="mobile-social__item"><a href="" class="mobile-social__link">Facebook</a></li>
+        <li class="mobile-social__item"><a href="" class="mobile-social__link">LinledIn</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>
