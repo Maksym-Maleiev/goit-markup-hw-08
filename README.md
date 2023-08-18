@@ -2,7 +2,7 @@
 
 - Create a repository `web-studio`.
 - Design a responsive version of all pages and elements of the
-  [_homework_](<https://www.figma.com/file/0uRxYENU9pFeOsq0U0u4IJ/Web-Studio-(Version-2.1)-(Copy)?node-id=1%3A3329&mode=dev>)
+  [**homework**](<https://www.figma.com/file/0uRxYENU9pFeOsq0U0u4IJ/Web-Studio-(Version-2.1)-(Copy)?node-id=1%3A3329&mode=dev>)
   layout.
 - Set up `GitHub Pages` and add a link to the live page in the header of the GitHub repository.
 
