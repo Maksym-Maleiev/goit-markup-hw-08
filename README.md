@@ -1,8 +1,5 @@
 # WebStudio
 
-This is the first individual project of the `full-stack` course from
-[`GoIT`](https://goit.global/ua/) company, section `(html/css)`.
-
 - Create a repository `web-studio`.
 - Design a responsive version of all pages and elements of the
   [`homework`](<https://www.figma.com/file/0uRxYENU9pFeOsq0U0u4IJ/Web-Studio-(Version-2.1)-(Copy)?node-id=1%3A3329&mode=dev>)
