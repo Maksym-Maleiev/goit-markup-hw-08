@@ -1,7 +1,6 @@
 # WebStudio
 
-> This is the first individual project of the `full-stack` course from
-> [`GoIT`](https://goit.global/ua/) company, layout section `(html/css)`.
+## This is the first individual project of the `full-stack` course from [`GoIT`](https://goit.global/ua/) company, layout section `(html/css)`.
 
 - Create a repository `goit-markup-hw-08`.
 - Design a responsive version of all pages and elements of the
